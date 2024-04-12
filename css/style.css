@@ -1,0 +1,95 @@
+body {
+  font-family: 'Bambu', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  
+}
+
+body::before {
+  content: "";
+  background: url('https://techcommunity.microsoft.com/t5/image/serverpage/image-id/469874iFE0D4F020442C5F9/image-size/large?v=v2&px=999');
+  background-size: cover;
+  opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; /* Certifique-se de que a imagem de fundo esteja atrás do conteúdo */
+ }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main > div {
+  width: 426px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.display {
+  background-color: #fff;
+  padding: 10px;
+  color: black;
+  font-size: 28px;
+  border-radius: 2px;
+}
+
+.numbers,
+.operations {
+  display: flex;
+  gap: 2px;
+  margin-top: 5px;
+}
+
+.numbers > div {
+  padding: 10px 15px;
+  font-size: 28px;
+  background-color: #f1f5f6;
+  cursor: pointer;
+  color: #202b38;
+  border-radius: 2px;
+}
+
+.operations > div {
+  padding: 10px 15px;
+  font-size: 25px;
+  background-color: #f7f8f1;
+  color: #202b38;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#equalsBtn {
+  background-color: greenyellow;
+}
+
+#clear {
+  flex: 1;
+}
+
+.div-flex{
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.div-flex > * {
+  flex-grow: 1;
+ }
+
+#tabuada{
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.2)
+}
